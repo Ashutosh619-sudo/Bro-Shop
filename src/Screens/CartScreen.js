@@ -18,7 +18,7 @@ function CartScreen() {
   const { id } = useParams();
   const { search } = useLocation();
   const qty = new URLSearchParams(search).get("qty");
-
+  
   const dispatch = useDispatch();
 
   const cart = useSelector((state) => state.cart);
